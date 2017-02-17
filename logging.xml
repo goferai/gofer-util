@@ -1,0 +1,17 @@
+<configuration xmlns="http://logging.apache.org/log4php/">
+    <appender name="fileAppender" class="LoggerAppenderRollingFile">
+        <layout class="LoggerLayoutPattern">
+            <param name="conversionPattern" value="%date{Y-m-d\TH:i:sO} [%level] %logger - %message%newline%exception" />
+        </layout>
+        <param name="file" value="/home/gofer-util/gofer-util/logs/gofer-util.log" />
+        <param name="maxFileSize" value="1MB" />
+        <param name="maxBackupIndex" value="5" />
+    </appender>
+    <logger name="Log">
+        <appender_ref ref="fileAppender" />
+    </logger>
+    <root>
+        <level value="DEBUG" />
+        <appender_ref ref="fileAppender" />
+    </root>
+</configuration>

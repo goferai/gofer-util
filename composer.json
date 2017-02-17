@@ -1,0 +1,41 @@
+{
+  "name": "goferai/util",
+  "type": "library",
+  "description": "Library of PHP utility functions",
+  "keywords": [
+    "gofer",
+    "utility functions"],
+  "homepage": "https://github.com/goferai/gofer-util",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Chip Allen",
+      "email": "chip@gofer.co",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "GoferUtil\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "GoferUtil\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=5.6",
+    "anahkiasen/underscore-php": "dev-master",
+    "graphaware/neo4j-php-client": "^4.0",
+    "apache/log4php": "2.3.0",
+    "ramsey/uuid": "^3.1",
+    "guzzlehttp/guzzle": "~6.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*"
+  },
+  "suggest": {
+    "php": ">=5.6"
+  }
+}

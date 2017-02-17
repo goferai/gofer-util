@@ -1,0 +1,5 @@
+logs/
+*.gofer-util.log
+*.gofer-util.log.*
+.idea/
+vendor/
